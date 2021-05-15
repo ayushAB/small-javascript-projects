@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<style>
+    body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+</style>
+<body class="h-screen flex flex-col justify-center items-center">
+    <div id="calculator" class="flex flex-col justify-center items-center bg-gray-700 rounded-lg">
+        <div id="calculatorScreen" class="bg-gray-700 h-12 w-96 rounded-t-lg text-white px-4 pt-2"></div>
+        <div class="grid grid-cols-4 w-full gap-2 bg-gray-700 text-white px-2 pt-1 pb-2 rounded-b-lg">
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">7</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">8</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">9</button>
+            <button class="bg-black text-white rounded shadow-xl" onclick="updatescreen(this)">-</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">4</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">5</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">6</button>
+            <button class="bg-black text-white rounded shadow-xl" onclick="updatescreen(this)">+</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">1</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">2</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">3</button>
+            <button class="row-span-3 bg-red-600 p-3 rounded shadow-xl" onclick="clearScreen()">C</button>
+            <button class="bg-gray-600 text-white rounded showdow-xl" onclick="updatescreen(this)">0</button>
+            <button class="bg-black text-white rounded shadow-xl" onclick="updatescreen(this)">/</button>
+            <button class="bg-black text-white rounded shadow-xl" onclick="updatescreen(this)">*</button>
+            <button class="bg-yellow-600 text-white rounded shadow-xl col-span-4 py-3" onclick="calculateExpression(this)">=</button>
+        </div>
+        <div class="text-4xl text-white mb-3">Calculator</div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+
+</html>
