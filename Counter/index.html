@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Counter</title>
+</head>
+
+<body class="h-screen flex flex-col">
+    <div class="flex-grow bg-blue-400 flex flex-col justify-center items-center">
+        <h1 class="text-7xl font-bold font-bold text-white">Counter</h1>
+        <h1 id="counter" class="mt-10 text-6xl font-bold font-bold text-white">0</h1>
+        <div class="flex justify-center mt-10">
+            <button onclick="decrease()"
+                class="px-9 py-1 rounded bg-purple-600 bg-opacity-50 font-bold hover:bg-gray-700 text-white shadow-xl focus:outline-none">Decrease</button>
+            <button onclick="reset()"
+                class="ml-4 px-9 py-1 rounded bg-purple-600 bg-opacity-50 font-bold hover:bg-gray-700 text-white shadow-xl focus:outline-none">Reset</button>
+            <button onclick="increase()"
+                class="ml-4 px-9 py-1 rounded bg-purple-600 bg-opacity-50 font-bold hover:bg-gray-700 text-white shadow-xl focus:outline-none">Increase</button>
+        </div>
+
+    </div>
+</body>
+<script src="counter.js"></script>
+</html>
