@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Count Down Timer</title>
+</head>
+<style>
+    body{
+        background-color: #ff4e00;
+        background-image :linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    }
+    .heart {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+</style>
+<body style="font-family: 'Pacifico', cursive;" class="h-screen flex flex-col justify-center items-center">
+    <div class="text-white text-7xl mb-8 underline">New Year In.....</div>
+    <div class="text-5xl text-white" id="demo"></div>
+</body>
+<script src="countdowntimer.js"></script>
+</html>
