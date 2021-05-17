@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Toast</title>
+</head>
+<style>
+.toast{
+    opacity: 0;
+    transition: opacity 2s;
+
+}
+.toast_pop{
+    opacity: 1;
+}
+</style>
+<body class="h-screen bg-purple-600 flex items-center justify-center">
+    <button onclick="toast()" class="focus:outline-none bg-purple-900 shadow-xl rounded text-white px-8 py-2">Toast</button>
+    <div id="toast_msg" class="shadow-xl bg-purple-900 w-56 flex justify-end pr-4 text-white rounded-2xl py-2 absolute bottom-10 toast">
+        Hello friends!!!✋
+        <button class="ml-10 focus:outline-none" onclick="closeToast()">X</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
