@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Dark Mode Toggle</title>
+</head>
+<style>
+    .move {
+        transform: translateX(0.5rem);
+        transition: transform 0.3s;
+        transition-timing-function: linear;
+    }
+
+    .move_right {
+        transform: translateX(5rem);
+    }
+</style>
+
+<body class="bg-purple-700 h-screen flex flex-col justify-center items-center">
+    <div id="toggel_btn" class="w-28 h-10 rounded-3xl flex items-center bg-purple-900">
+        <div id="circle" class="h-6 w-6 rounded-full bg-white move">
+        </div>
+    </div>
+    <div class="text-lg text-center max-w-lg">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
