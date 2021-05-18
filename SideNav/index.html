@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .ham_btn{
+        transition: transform 1.3s;
+    }
+    .ham_btn_right{
+        transform: translateX(138px);
+    }
+    .nav_bar{
+        transform: translateX(-100%);
+        transition: transform 1.3s;
+    }
+    .nav_bar_right{
+        transform: translateX(0%);
+    }
+</style>
+<body class="bg-purple-300 relative">
+    <button id="navBtn" onclick="openCloseNavBar()" class="text-white mt-5 bg-purple-600 p-2 focus:outline-none ham_btn">
+        <svg viewBox="0 0 100 80" width="20" height="20" fill="white">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+    </button>
+    <div id="navBar" class="h-screen absolute top-0 bg-purple-600 text-white nav_bar">
+        <ul class="px-10 py-5">
+            <li>Google</li>
+            <li>Youtube</li>
+            <li>Gmail</li>
+        </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
