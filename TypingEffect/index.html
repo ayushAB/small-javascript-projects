@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .letter{
+        opacity: 0;
+        transform: translateY(60%);
+        transition: all 0.6s ease-in-out;
+        display: inline-block;
+    }
+    .letter-anim{
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+<body class="h-screen bg-blue-400 flex flex-col justify-center items-center">
+    <div class="text-white text-4xl" id="text-holder">
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
