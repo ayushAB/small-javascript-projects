@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Music App</title>
+</head>
+<style>
+    body {
+        font-family: 'Indie Flower', cursive;
+        background-color: #FE0341;
+    }
+
+    .play-icon-color-red {
+        color: #FE0341;
+    }
+</style>
+
+<body class="h-screen flex flex-col justify-center items-center">
+    <div class="w-full flex justify-center">
+        <div class="max-h-full flex flex-col items-center  w-full py-6 max-w-xs shadow-2xl bg-white rounded-xl">
+            <h1 class="text-center text-2xl">Music App</h1>
+            <div class="flex-grow flex flex-col items-center">
+                <div class="h-56 flex justify-center items-center w-56 my-16 rounded-full shadow-2xl border border-gray-300 overflow-hidden">
+                    <div class="h-48 w-48 shadow-2xl rounded-full overflow-hidden"><img class=""
+                        src="https://i.pinimg.com/originals/e6/14/5a/e6145a1d3eb7577b274df09c59ca25e0.png" />
+                    </div>
+                </div>
+                <h1 id="song_name" class="text-xl">Song Name</h1>
+            </div>
+            <div class="w-full flex justify-between px-3">
+                <div id="current_time">
+                    0:00
+                </div>
+                <div id="full_length">
+                    0:00
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="h-1.5 rounded border border-gray-300 mx-2">
+                    <div id="progress_Bar" class="h-1 w-0.5 rounded bg-green-300">
+                    </div>
+                </div>
+            </div>
+            <div class="my-10 flex justify-between relative px-2 py-1 items-center border w-36 rounded-2xl shadow-xl">
+                    <div id="previous" class="h-5 w-5 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                <div id="play" class="absolute bottom-0 -top-5 right-9  h-16 w-16 play-icon-color-red">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+    
+                <div id="pause" class="absolute bottom-0 -top-5 right-9 h-16 w-16 play-icon-color-red hidden" >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
+                            clip-rule="evenodd" />
+                    </svg></div>
+                <div class="h-5 w-5 text-gray-400" id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+    
+            </div>
+        </div>
+        <div lass="h-full flex flex-col ml-10">
+            <h1 class="text-2xl mb-2 text-white pl-10 font-bold">Songs</h1>
+            <div class="ml-10 py-4 h-96" id="song_list">
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+<script src="script.js"></script>
+
+</html>
