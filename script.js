@@ -36,12 +36,6 @@ const projects = [
         url:'GithubProfile'
     },
     {
-        name:'Weather App',
-        img_path:'images/github_profile.PNG',
-        overview:'Simple Application build with <a href="https://www.accuweather.com">Accuweather</a> API.Used Tailwindcss for css.',
-        url:'WeatherApp'
-    },
-    {
         name:'HoverBoard App',
         img_path:'images/hover_board.PNG',
         overview:'Simple Application build with <a href="https://www.accuweather.com">Accuweather</a> API.Used Tailwindcss for css.',
