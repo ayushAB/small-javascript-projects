@@ -1,7 +1,7 @@
 const API_URL = "https://pokeapi.co/api/v2/pokemon/";
 const Total_Pokemons = 151;
 const pokemons_container = document.createElement('div');
-pokemons_container.className = 'grid grid-cols-3 gap-3 max-w-7xl z-10';
+pokemons_container.className = 'grid sm:grid-cols-3 gap-3 max-w-7xl z-10';
 const colors = {
   fire: 'linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%)',
   grass: 'linear-gradient(315deg, #20bf55 0%, #01baef 74%)',
@@ -29,11 +29,12 @@ async function getPokemByID(id) {
 getAllPokemons();
 
 async function getAllPokemons() {
+  document.body.appendChild(pokemons_container);
   for (let index = 1; index <= Total_Pokemons; index++) {
     const pokemon = await getPokemByID(index);
     createPokemonCard(pokemon);
   }
-  document.body.appendChild(pokemons_container);
+
 }
 
 function createPokemonCard(pokemon_res) {
