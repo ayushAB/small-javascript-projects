@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    
+    body
+    {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .bg-main { 
+     background-color: hsl(217, 54%, 11%);
+    }
+    .bg-main-dark { 
+     background-color:  hsla(215, 55%, 9%, 0.289);
+    }
+    .bg-light { 
+      background-color: hsl(215, 51%, 70%);
+    }
+    .bg-card{
+      background-color: hsl(216, 50%, 16%);
+    }
+    .text-blue{
+      color:hsl(215, 51%, 70%);
+    }
+    .text-blue-dark {
+      color:hsla(215, 52%, 70%, 0.713);
+    }
+    .text-cyan{
+      color:hsl(178, 100%, 50%);
+    }
+  </style>
+</head>
+<body class="h-screen bg-main flex justify-between items-center flex-col">
+
+  <div class="h-96 max-w-md p-5 flex-1 flex items-center">
+    <div class="bg-main-dark p-4 rounded-md">
+      <div class="bg-card px-5 py-5 rounded-md">
+        <div class="overflow-hidden rounded-md ">
+          <img src="./images/image-equilibrium.jpg">
+        </div>
+        <div class="text-white font-bold my-4">Equilibrium #3429</div>
+        <div class="text-white my-4 text-blue-dark"> Our Equilibrium collection promotes balance and calm.</div>
+        <div class="flex justify-between w-full my-5"> 
+           <div class="text-white flex items-center">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+             <span class="ml-2 text-cyan">0.041 ETH</span>
+           </div>
+           <div class="text-white flex items-center">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+            <span class="ml-2 text-blue">3 days left</span>
+           </div>
+        </div>
+        <hr>
+        <div class="text-sm flex items-center mt-4">
+          <div class="h-8 w-8 border border-white rounded-full">
+            <img src="./images/image-avatar.png">
+          </div>
+          <span class="text-blue ml-2">Creation of </span><span class="text-white ml-1"> Jules Wyvern</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ayush Bante</a>.
+  </div>
+</body>
+</html>

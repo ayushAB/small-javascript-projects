@@ -107,6 +107,12 @@ const projects = [
         overview:'Simple Application build with <a href="https://www.accuweather.com">Accuweather</a> API.Used Tailwindcss for css.',
         url:'TypingEffect'
     },
+    {
+        name:'NFT Card Design',
+        img_path:'images/desktop-design.jpg',
+        overview:'Simple Application build with <a href="https://www.accuweather.com">Accuweather</a> API.Used Tailwindcss for css.',
+        url:'nft-preview-card-component-main'
+    },
 ];
 document.getElementById('count').innerText = "("+ projects.length + ")";
 const showProjects = () => {
