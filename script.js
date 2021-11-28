@@ -113,6 +113,12 @@ const projects = [
         overview:'Simple Application build with <a href="https://www.accuweather.com">Accuweather</a> API.Used Tailwindcss for css.',
         url:'nft-preview-card-component-main'
     },
+    {
+        name:'Event Key code app',
+        img_path:'images/eventkeycode.PNG',
+        overview:'Simple Application build with <a href="https://www.accuweather.com">Accuweather</a> API.Used Tailwindcss for css.',
+        url:'event-keycodes'
+    },
 ];
 document.getElementById('count').innerText = "("+ projects.length + ")";
 const showProjects = () => {
