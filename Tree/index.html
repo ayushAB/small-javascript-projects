@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Toast</title>
+    <title>Tree structure</title>
 </head>
 <style>
-    .hide :nth-child(2) {
+    .hide{
         display: none;
     }
 </style>
-<body class="h-screen bg-purple-600">
-    <div id="tree"></div>
+<body class="h-screen bg-purple-600 flex justify-center items-center gap-3 px-5">
+    <div id="json" class="h-96 w-96 overflow-auto flex-1 text-white p-4"></div>
+    <div id="tree" class="w-full max-w-xl shadow-xl flex-1 bg-white rounded px-5 py-4"></div>
 </body>
 <script src="script.js"></script>
 </html>
