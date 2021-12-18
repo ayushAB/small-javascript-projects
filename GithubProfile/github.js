@@ -8,7 +8,7 @@ let profile_image = document.getElementById("profile_image");
 
 function getGithubProfile(){
     const username = document.getElementById('username').value;
-    fetch(`http://api.github.com/users/${username}`)
+    fetch(`https://api.github.com/users/${username}`)
   .then(response =>response.json())
   .then(data => {
     profile_name.innerHTML = data.name;
